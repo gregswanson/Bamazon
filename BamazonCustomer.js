@@ -3,7 +3,7 @@ var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  //password : 'secret',
+//password : 'secret',
   database : 'bamazon'
 });
  
@@ -25,6 +25,8 @@ prompt.start();
   // Get two properties from the user: ID and Quantity 
  
   prompt.get(['please_enter_id_of_product', 'how_many_would_you_like'], function (err, result) {
+
+//save values to variables
     var product = result.please_enter_id_of_product;
     var quantity = parseInt(result.how_many_would_you_like);
     
@@ -33,29 +35,30 @@ prompt.start();
 		 	if (quantity <= rowsTwo[0].StockQuantity){
 			 		
 //change quantity
-			 		connection.query("UPDATE products SET StockQuantity=StockQuantity-2 WHERE ItemID='" + product + "'", function(err, rows, fields) {
+			 		connection.query("UPDATE products SET StockQuantity=StockQuantity-" + quantity + " WHERE ItemID='" + product + "'", function(err, rows, fields) {
 					  if (err) throw err;
 //log order	 
 					  console.log("You Selected: " + quantity + " " + rowsTwo[0].ProductName +
 		 			  	" Total: $" + quantity*rowsTwo[0].Price);
+//end connection
+					  connection.end();
 					});
 
 
 		 			  
 		 			} else {
+//there is not enough quantity to complete the transaction		 				
 		 				console.log("Insufficient quantity. The order has been cancelled.");
+//end connection
+		 				connection.end();
 		 			}
 		});
-
-		
 
   });
 
 
 
-
 });
 
-//connection.end();
 
 
