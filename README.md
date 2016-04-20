@@ -2,6 +2,7 @@
 
 ##BamazonCustomer.js
 
+<img src="https://github.com/gregswanson/Bamazon/blob/master/img/img1.png" alt="Image 1" height="200px"/>
 ![Image 1](https://github.com/gregswanson/Bamazon/blob/master/img/img1.png)
 
 ![Image 2](https://github.com/gregswanson/Bamazon/blob/master/img/img2.png)
