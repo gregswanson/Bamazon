@@ -3,7 +3,6 @@
 ##BamazonCustomer.js
 
 <img src="https://github.com/gregswanson/Bamazon/blob/master/img/img1.png" alt="Image 1" height="200px"/>
-![Image 1](https://github.com/gregswanson/Bamazon/blob/master/img/img1.png)
 
 ![Image 2](https://github.com/gregswanson/Bamazon/blob/master/img/img2.png)
 
@@ -11,7 +10,8 @@
 
 ![Image 4](https://github.com/gregswanson/Bamazon/blob/master/img/img4.png)
 
-![Image 5](https://github.com/gregswanson/Bamazon/blob/master/img/img5.png)
+<img src="https://github.com/gregswanson/Bamazon/blob/master/img/img5.png" alt="Image 5" height="200px"/>
+
 
 ##BamazonManager.js
 
@@ -23,9 +23,11 @@
 
 ![Image 9a](https://github.com/gregswanson/Bamazon/blob/master/img/img9a.png)
 
-![Image 9b](https://github.com/gregswanson/Bamazon/blob/master/img/img9b.png)
+<img src="https://github.com/gregswanson/Bamazon/blob/master/img/img9b.png" alt="Image 9b" height="200px"/>
 
 ![Image 10a](https://github.com/gregswanson/Bamazon/blob/master/img/img10a.png)
 
-![Image 10b](https://github.com/gregswanson/Bamazon/blob/master/img/img10b.png)
+<img src="https://github.com/gregswanson/Bamazon/blob/master/img/img10b.png" alt="Image 10b" height="200px"/>
+
+
 
