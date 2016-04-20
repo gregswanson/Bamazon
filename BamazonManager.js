@@ -78,7 +78,7 @@ switch(selection) {
 	    break;
 	
 	case 4:
-	console.log("case 4");
+	
 //get information to update mysql database
 	    prompt.get(['enter_product_name', 'enter_department_name', 'enter_price', 'enter_quantity'], function (err, result) {
 		    var product = result.enter_product_name;
